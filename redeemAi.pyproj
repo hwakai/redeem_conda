@@ -1,0 +1,125 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6e536819-4170-4ed8-abfa-8db301d5649a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>redeemAi</Name>
+    <RootNamespace>redeemAi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="analysisBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="analysisConfigView.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="comb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="fileServer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gpiBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pComb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modelComb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="configView.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="commonBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="kerasImport.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ageLearn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="learnBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="evtLearn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="learnView.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classDef.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbServer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PyQt5Import.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="serverBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sshServer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resultView.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="static.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="origin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="qtBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py" />
+    <Compile Include="staticImport.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tableDesc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="treeWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="updateView.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ageView.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="viewBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
