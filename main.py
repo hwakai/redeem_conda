@@ -15,7 +15,7 @@ if __name__ == '__main__':
         pass
 
     except Exception as e:                                                                              # 例外                                                                          # 例外                                                                          # 例外
-        self.printError(e)                                                                              # 例外を表示
+        print(e)                     			                                                        # 例外を表示
         pass
 
 # CREATE DATABASE redeem DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
